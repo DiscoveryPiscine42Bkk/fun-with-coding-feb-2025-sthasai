@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.parallax {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.img1 {
+    background-image: url("https://img.freepik.com/free-vector/pixel-art-rural-landscape-background_52683-125383.jpg?t=st=1738768896~exp=1738772496~hmac=362f1ac00be93baf137a80c002aa0119fe99d1f404cdc102bbf05434a7a64b83&w=900");
+}
+.img2 {
+    background-image: url("https://img.freepik.com/free-vector/pixel-art-mystical-background_52683-87349.jpg?t=st=1738771853~exp=1738775453~hmac=ba5959c443c1aa783885ffc7f0b33f4487c8a34484a3d8565c156c09adf9a983&w=1060");
+}
+.text-section {
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
