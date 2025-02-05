@@ -12,50 +12,31 @@
         }
         html, body {
             height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
         }
         table,td {
             border: 1px solid black;
             border-collapse: collapse;
-            width: 100%;
             height: 100%;
         }
         td {
             text-align: left;
-            padding-block: 40px;
+            font-size: 1.5rem;
         }
         .box1 {
-            background-color: #ff5733; /* Reddish Orange */
+            background-color: #ff5733;
         }
         .box2 {
-            background-color: #3498db; /* Blue */
+            background-color: #3498db;
         }
-        @media (max-width: 600px) {
-            table {
-                display: block;
-            }
-            tr {
-                display: block;
-                width: 100%;
-            }
-            td {
-                display: block;
-                width: 100%;
-                height: 50vh; /* Each box takes half of the screen height */
-            }
-        }
-
     </style>
 </head>
 
 <body>
 
-    <table>
+    <table style="width: 100%;">
         <tr>
             <td class="box1">coffee</td>
-            <td class="box2">tea</td>
+            <td class="box2" >tea</td>
         </tr>
     </table>
 
