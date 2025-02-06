@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="backgroound.css">
 </head>
 <body>
-    <button>Click me!</button>
+    <button onclick="changeBackgroundColor()">Click me!</button>
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 
+            'rgb(' + Math.round(Math.random() * 255) + ',' + 
+            Math.round(Math.random() * 255) + ',' + 
+            Math.round(Math.random() * 255) + ')';
+        }
+    </script>
 
 </body>
 </html>
