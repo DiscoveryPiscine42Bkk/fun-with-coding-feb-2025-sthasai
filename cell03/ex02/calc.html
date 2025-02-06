@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+
+    <input type="text" id="left" placeholder="Enter a number">
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" id="right" placeholder="Enter a number">
+
+    <input type="submit" value="Try me!" onclick="calculate()">
+
+    <script>
+        function calculate() {
+            let left = document.getElementById("left").value;
+            let right = document.getElementById("right").value;
+            let operator = document.getElementById("operator").value;
+
+            if (!/^\d+$/.test(left) || !/^\d+$/.test(right)) return console.log("Error :("), alert("Error :(");
+
+            let num1 = Number(left), num2 = Number(right);
+
+            if ((operator === "/" || operator === "%") && num2 === 0) 
+                return alert("It's over 9000!"), console.log("It's over 9000!");
+
+            let result = eval(`${num1} ${operator} ${num2}`);
+            alert("Result: " + result);
+            console.log("Result:", result);
+        }
+
+        setInterval(() => alert("Please, use me..."), 30000);
+
+    </script>
+    
+</body>
+</html>
