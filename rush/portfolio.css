@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Sanchez:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Sanchez", serif;
+}
+:root {
+    --background: #fbf5dd;
+    --primary: #16404D;
+    --secondary: #DDA853;
+    --accent: #A6CDC6;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--background);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--accent);
+    padding: 1rem;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid var(--primary);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem; 
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav a:hover {
+    background: var(--primary);
+    color: var(--accent);
+    border-radius: 30px;
+}
+/* ---------------------------------*/
+
+section {
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    flex-wrap: wrap
+}
+.about-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.about-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 40%;
+}
+.about-img img{
+    width: 100%;
+    border: 3px solid var(--primary);
+    position: relative;
+}
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+.about-text h2 {
+    display: flex;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);  
+    font-family: "Monsieur La Doulaise", serif;  
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.about-text h2:hover{transform: scale(1.1);}
+.about-text h1 { 
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--primary);}
+
+.about-text h3 {
+    font-size: clamp(1.8rem, 3vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+.about-text h3:hover{transform: scale(1.1);}
+.about-text p {
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
+    line-height: 1;
+    border: 3px solid var(--primary);
+    
+}
+.about-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.info{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: white;
+    box-shadow: 8px 8px 0px var(--primary);
+    border: 3px solid var(--primary);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.info:hover{ background-color: #A6CDC6;
+transform: scale(1.1);}
+.info h5, .info h6{
+    font-size: 3rem;
+    color: var(--primary);
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 500;
+}
+.info p {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+.info ul{
+    font-size: 1.2rem;
+    color: var(--primary);
+    list-style: none;
+}
+.showcase-skill {
+    text-align: center;
+    margin-bottom: 2rem;   
+}
+.showcase-skill h3{
+    font-size: 5em;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.showcase-skill h3:hover {
+    transform: scale(1.1);
+}
+.skillbox {
+    display: flex;
+    text-align: center;
+    gap: 1em;
+}
+.skillbox ul li{
+    font-size: 1.2em;
+    font-weight: 500;
+    list-style: none;
+    flex-direction: column;
+    display: inline-block;
+    color: #16404D;
+    gap: 1em;
+}
+.skillbox li{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------------------*/
+/* Showcase Section */
+
+#showcase {
+    background-color: var(--background);
+    text-align: center;
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+.header span{
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 550;
+}
+.showcase-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 2em;
+}
+.box{
+    background-color: #fff;
+    border: 3px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    object-fit: cover;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    color: var(--primary);
+    box-shadow: 5px 5px 0px var(--primary);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.box:hover {
+    background-color: #A6CDC6;
+    transform: translateY(-5px);
+    transform: scale(1.1)
+}
+.box span {
+    font-family: "Monsieur La Doulaise", serif;
+    font-size: 1.5em;
+    color: var(--primary);
+    font-weight: 500;
+}
+.box img{
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    min-width: 25px;
+}
+
+/* ---------------------------------*/
+/* Contact Section */
+
+#contact {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.contact {
+    flex: 1;
+    display: grid;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact div {
+    background-color: white;
+    border: 3px solid var(--primary);
+    padding: 1.5rem 2rem;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 5px 5px 0px var(--primary);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact div:hover {
+    background: var(--accent);
+    transform: translateY(-5px);
+    transform: scale(1.1)
+}
+
+.contact p,
+.contact a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--secondary);
+}
+
+/* ---------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--accent);
+}
+
+@media screen and (max-width: 420px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img {
+        max-width: 80%;
+    }
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+    .about-text h2 { 
+        font-size: 2.5rem;
+    }
+    .about-text h1, .about-text h3 { font-size: 2rem; }
+    .about-text p { font-size: 1rem; }
+    .info {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1rem;}
+    .showcase-container {grid-template-columns: 1fr;}
+    .header {font-size: 3rem;}
+    .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;}
+        .contact div {
+            padding: 1rem;
+            min-width: 220px;
+        }
+    
+        .contact p, .contact a {
+            font-size: 1rem;
+        }
+}
